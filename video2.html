@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="http://releases.flowplayer.org/7.0.4/commercial/skin/skin.css">
+    <style>
+
+   </style>
+   <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="http://releases.flowplayer.org/7.0.4/commercial/flowplayer.min.js"></script>
+  <script src="http://releases.flowplayer.org/hlsjs/flowplayer.hlsjs.min.js"></script> 
+  <script>
+  flowplayer(function (api) {
+    api.on("load", function (e, api, video) {
+      $("#vinfo").text(api.engine.engineName + " engine playing " + video.type);
+    }); });
+  </script>
+
+<div class="flowplayer fixed-controls no-toggle no-time play-button obj"
+      style="    width: 85.5%;
+    height: 80%;
+    margin-left: 7.2%;
+    margin-top: 6%;
+    z-index: 1000;" data-key="$812975748999788" data-live="true" data-share="false" data-ratio="0.5625"  data-logo="">
+      <video autoplay="true" stretch="true">
+
+         <source type="application/x-mpegurl" src="https://naver-kbs-h.smartmediarep.com/smc/naver/adaptive/eng/K02_PS-2019164728-01-000_SC01/2f6b62732f54323031392d303130342f54323031392d303130345f534330315f32303139313032345f50532d323031393136343732382d30312d3030305f4d344832373030302e736d696c/0-0-0/content_5120000.m3u8?solexpire=1572019154&solpathlen=210&soltoken=e8760a09a7a270c42e3ee003aed05ea3&soltokenrule=c29sZXhwaXJlfHNvbHBhdGhsZW58c29sdXVpZA==&soluriver=2&soluuid=169eb7bc-a37c-42b8-9468-fde7cc00097e&&">
+      </video>   
+   </div>
